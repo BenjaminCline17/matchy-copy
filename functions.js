@@ -15,21 +15,21 @@
 /**
  * I: function takes input array and string
  * O: returns animal's object if an animal with that exists, return null if no animal with that name exists
- * C:
- * E:
+ * C:N/A
+ * E:N/A
  */
 
 
-function search(animals, string) {
+function search(animals, name) {
    for (let i = 0; i < animals.length; i++) {
-    if (animals[i].name === string) {
-        return animals[i];
+    if (animals[i].name === name) {
+        return animals[i].name;
     } else {
         return null;
     }
    } 
 }
-
+console.log(search())
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
