@@ -78,11 +78,22 @@ console.log(animals.length);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //I choose the Array data structure since it can effectively hold a list of string values
+/* 
+I: function takes arr input
+O: return random index from animals array
+C:N/A
+E:N/A
+*/
+
+
 var friends = [];
 function getRandom(arr) {
- return arr[Math.floor(Math.random() * arr.length)];
+return arr[Math.floor(Math.random() * arr.length)];
 }
-console.log(getRandom(animals.name));
+const randomIndex = getRandom(animals);
+friends.push(randomIndex.name);
+console.log(friends);
+randomIndex["friends"] = friends;
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
