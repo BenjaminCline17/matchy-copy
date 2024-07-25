@@ -21,15 +21,15 @@
 
 
 function search(animals, name) {
-   for (let i = 0; i < animals.length; i++) {
-    if (animals[i].name === name) {
-        return animals[i].name;
+   for (let keys in animals) {
+    if (animals[keys].name == name) {
+        return animals[keys].name;
     } else {
         return null;
     }
    } 
 }
-console.log(search())
+
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
