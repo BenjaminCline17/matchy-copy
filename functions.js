@@ -19,11 +19,14 @@
  * E:N/A
  */
 
-
+//declare function search with animals array and name string
 function search(animals, name) {
+    //for every keys in animals array
    for (let keys in animals) {
+    //if animals[keys].name == name, return animals[keys].name
     if (animals[keys].name == name) {
         return animals[keys].name;
+        //else return null
     } else {
         return null;
     }
