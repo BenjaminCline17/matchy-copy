@@ -21,11 +21,11 @@
 
 //declare function search with animals array and name string
 function search(animals, name) {
-    //for every keys in animals array
-   for (let keys in animals) {
-    //if animals[keys].name == name, return animals[keys].name
-    if (animals[keys].name == name) {
-        return animals[keys].name;
+    //for loop to iterate through array
+   for (let i = 0; i < animals.length; i++) {
+    //if animals[i].name equal name return animals[i].name
+    if (animals[i].name == name) {
+        return animals[i].name;
         //else return null
     } else {
         return null;
