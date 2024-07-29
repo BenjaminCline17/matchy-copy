@@ -23,28 +23,54 @@
 function search(animals, name) {
     //for loop to iterate through array
    for (let i = 0; i < animals.length; i++) {
-    //if animals[i].name equal name return animals[i].name
+    //if animals[i].name equal name return animals[i]
     if (animals[i].name == name) {
-        return animals[i].name;
-        //else return null
-    } else {
-        return null;
-    }
-   } 
+        return animals[i];
+    } //return null
+   } return null;
 }
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+/* 
+I:function takes animals, name, and replacement
+O:if name exists within animals array, replace entire object with replacement object
+C:N/A
+E:N/A
+*/
+//declare replace function with animals array, name string, and replacement object
+function replace(animals, name, replacement) {
+    //for loop to iterate through animals array
+for (let i = 0; i < animals.length; i++) {
+    //if animals[i].name equals name, animals[i] equals replacement
+    if (animals[i].name == name) {
+        animals[i] = replacement;
+    }
+    //return animals.name
+} return animals.name;
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+/* 
+I:function takes animals array and name string
+O:if an animal with name exists with animals, remove it
+C:N/A
+E:N/A
+*/
+//declare remove function with animals array and name string
+function remove(animals, name) {
+    //for loop to iterate through animals array
+   for (let i = 0; i < animals.length; i++) {
+    //if animals[i].name equals name, delete animals[i] 
+    if (animals[i].name == name) {
+        delete animals[i];
+    }// return animals.name
+   } return animals.name;
+}
 
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
