@@ -65,9 +65,9 @@ E:N/A
 function remove(animals, name) {
     //for loop to iterate through animals array
    for (let i = 0; i < animals.length; i++) {
-    //if animals[i].name equals name, delete animals[i] 
+    //if animals[i].name equals name, animals.splice(i) 
     if (animals[i].name == name) {
-        delete animals[i];
+        animals.splice(i);
     }// return animals.name
    } return animals.name;
 }
