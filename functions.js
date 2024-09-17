@@ -69,8 +69,23 @@ function remove(animals, name){
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+//I:Function takes in animals array and animal object
+//O:Function should add the animal object to the animals array if it passes the correct conditions
+//C:N/A
+//E:N/A
 
-
+function add(animals, animal){
+//use a for loop to iterate through the input array
+for (let i = 0; i < animals.length; i++){
+    //use a if statement to see if animal Object passes the requirement
+    if (animal.name.length > 0 && animal.species.length > 0 && animal.name != animals[i].name){
+    //else return animals
+    } else {
+        return animals;
+    }
+    //return the result of pushing animal object into the animals array after the loop has finished
+} return animals.push(animal);
+}
 
 /**
  * You did it! You're all done with Matchy!
