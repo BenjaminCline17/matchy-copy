@@ -13,6 +13,15 @@
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+function search(array, string){
+    //for loop to iterate through array input
+    for (let i = 0; i < array.length; i++){
+    //if array[i].name equals string, return array[i]
+    if (array[i].name == string){
+        return array[i];
+    }//return null if array input does not match string input
+    } return null;
+}
 
 
 //////////////////////////////////////////////////////////////////////
