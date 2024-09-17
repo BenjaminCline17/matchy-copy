@@ -28,6 +28,15 @@ function search(array, string){
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+function replace(array, name, replacement){
+    //use a for loop to iterate through the input array
+    for (let i = 0; i < array.length; i++){
+        //if the current index of the input array's name key equals input name, change the array's entire object with the input replacement
+        if (array[i].name == name){
+            array[i] = replacement;
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
